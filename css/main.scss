@@ -10,6 +10,16 @@ body {
 header {
 	padding-top: $base-spacing;
 }
+
+.testblock {
+	background-color: blue;
+	width: 500px;
+	height: 500px;
+	display: none;
+	@include breakpoint($large-screen) {
+		display: block;
+	}
+}
 .main-nav {
 	display: flex;
 	justify-content: space-around;
@@ -64,12 +74,20 @@ article {
 }
 
 .title-marquee {
-	background-size: 100%;
-	height: $base-spacing * 5;
-	padding: $base-spacing * 2;
-
+	background-size: cover;
+	padding: $base-spacing;
+	margin-left: $base-spacing;
+	margin-right: $base-spacing;
+	height: 50vw;
+	@include breakpoint ($large-screen) {
+		height: 480px;
+	}
 	h1 {
 		margin: 0;
+		font-family: $heading-font-family;
+		font-weight: $heading-font-weight;
+		font-style: italic;
+		font-size: 2.236em;
 	}
 }
 
@@ -103,8 +121,5 @@ article {
 
 .accent-text {
 	color: $accent-text-color;
-	@include breakpoint($large-screen) {
-		float: left;
-		margin-right: $small-spacing;
-	}
+	font-style: italic; 
 }
