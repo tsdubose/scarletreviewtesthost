@@ -207,7 +207,7 @@ h6 {
 }
 
 h1 {
-	font-size: 4.236em;
+	font-size: 2.236em;
 }
 
 p {
@@ -381,7 +381,7 @@ article {
 	}
 }
 
-.masthead svg {
+.masthead img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -390,7 +390,7 @@ article {
 }
 
 @media only screen and (min-width: 960px) {
-	.masthead svg {
+	.masthead img {
 		height: 8.8em;
 		margin-left: 8em;
 		margin-right: 0;
@@ -423,6 +423,7 @@ article {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-content: center;
 }
 
 @media only screen and (min-width: 960px) {
@@ -441,7 +442,7 @@ article {
 
 @media only screen and (min-width: 960px) {
 	.cover-child {
-		width: 45%;
+		max-width: 48%;
 	}
 }
 
@@ -453,7 +454,7 @@ article {
 @media only screen and (min-width: 960px) {
 	.cover-masthead {
 		order: 2;
-		width: 49%;
+		max-width: 49%;
 	}
 }
 
@@ -473,7 +474,7 @@ article {
 @media only screen and (min-width: 960px) {
 	.issue-info {
 		order: 3;
-		width: 32%;
+		width: 28%;
 	}
 }
 
